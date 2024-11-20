@@ -1,0 +1,222 @@
+/* ESTILO GERAL */
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+
+}
+
+.interface{
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a{
+    color: #707070;
+    text-decoration: none;
+    display: inline-block;
+    /* Display Inline block para que o transform funcione no texto já que ele é inline */
+}
+
+header a:hover{
+    color: #fff;
+    transition: .2s;
+    transform: scale(1.05);
+
+}
+header nav ul{
+    list-style-type: none;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px blueviolet;
+}
+
+.logo{
+    border-radius: 360px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section .topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+}
+
+.txt-topo-site {
+    padding: 0 20px; /* Adiciona padding para evitar que o texto fique colado nas bordas */
+    text-align: center; /* Centraliza o texto */
+}
+
+.topo-do-site p {
+    color: #fff;
+    font-size: 18px;
+    text-align: center; /* Centraliza o texto */
+    line-height: 1.6; /* Dá um espaçamento confortável entre as linhas */
+    font-weight: 300;
+}
+
+.txt-topo-site span{
+    color: blueviolet;
+}
+
+.img-topo-site {
+    padding-top: 10px; /* Ajuste a quantidade de pixels conforme desejado */
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    
+}
+
+/* Seção principal que ocupa o restante da página */
+main {
+    flex: 1;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+/* Conteúdo do rodapé, com alinhamento e espaçamento */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    
+    
+}
+
+/* Estilo para os ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;  /* Alinha o texto com os ícones */
+}
+
+.social-icons a {
+    text-decoration: none;  /* Remove o sublinhado do link */
+    display: inline-flex;  /* Torna o link um flex container para alinhar ícone e texto */
+    align-items: center;  /* Alinha os ícones e o texto verticalmente */
+    gap: 5px;  /* Adiciona espaçamento entre o ícone e o texto */
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.social-icons a span {
+    color: #fff;  /* Cor do texto ao lado dos ícones */
+    font-size: 14px;  /* Tamanho da fonte */
+    font-weight: 500;  /* Deixa o texto mais forte */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover span {
+    color: blueviolet;  /* Muda a cor do texto ao passar o mouse */
+}
+
+
+/* Estilo do copyright */
+footer p {
+    color: #707070;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p:hover {
+    color: #fff;
+}
+
+footer .copyright {
+    transition: color 0.3s ease;
+}
+
